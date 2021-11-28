@@ -47,13 +47,13 @@ export default function Textbox( ) {
         <div className="container my-5" >
             <h2>Summary of text</h2>
 
-            <p id="total">
+            <p data-testid="total">
             Total Words:    <b>{text.split(/\s+/).filter((element) => {return element.length!== 0}).length}</b> <br/> 
             Total Characters:   <b>{text.length}</b> <br/> 
             </p>
 
             <h2>Preview</h2>
-            <p id="final">{text}</p>
+            <p data-testid="final">{text}</p>
         </div>
 
         </> 
