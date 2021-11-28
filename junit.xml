@@ -1,0 +1,24 @@
+<testsuites name="jest tests" tests="10" failures="0" time="2.229">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-11-28T18:34:48" time="2.229" tests="10">
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.142">
+    </testcase>
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.062">
+    </testcase>
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.074">
+    </testcase>
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.135">
+    </testcase>
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.063">
+    </testcase>
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.077">
+    </testcase>
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.083">
+    </testcase>
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.068">
+    </testcase>
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.073">
+    </testcase>
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.022">
+    </testcase>
+  </testsuite>
+</testsuites>
