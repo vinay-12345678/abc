@@ -1,24 +1,151 @@
-<testsuites name="jest tests" tests="10" failures="0" time="2.229">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-11-28T18:34:48" time="2.229" tests="10">
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.142">
+<testsuites name="jest tests" tests="7" failures="7" time="2.015">
+  <testsuite name="undefined" errors="0" failures="7" skipped="0" timestamp="2021-11-29T15:29:34" time="2.015" tests="7">
+    <testcase classname=" clearing the text area" name=" clearing the text area" time="0.132">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Checking with empty string will always match, use .toBeEmptyDOMElement() instead:
+
+Received:
+  jHd siudugf iuegf
+    at Object.&lt;anonymous&gt; (/Users/abittoo/Desktop/Pesto/Project 1/abc/src/App.test.js:12:21)
+    at Promise.then.completed (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:216:10)
+    at _callCircusTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:212:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:63:9)
+    at run (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:472:34)</failure>
     </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.062">
+    <testcase classname=" convert textarea to Uppercase " name=" convert textarea to Uppercase " time="0.077">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  KJWDHKJ IIH HWDIHUIAHDSH UIAD
+Received:
+  KJWDHKJ iih HWDIHUIahdsh uiAD
+    at Object.&lt;anonymous&gt; (/Users/abittoo/Desktop/Pesto/Project 1/abc/src/App.test.js:23:21)
+    at Promise.then.completed (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:216:10)
+    at _callCircusTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:212:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:63:9)
+    at run (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:472:34)</failure>
     </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.074">
+    <testcase classname=" convert textarea to lowercase than uppercase " name=" convert textarea to lowercase than uppercase " time="0.071">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  KJWDHKJ IIH HWDIHUIAHDSH UIAD
+Received:
+  KJWDHKJ iih HWDIHUIahdsh uiAD
+    at Object.&lt;anonymous&gt; (/Users/abittoo/Desktop/Pesto/Project 1/abc/src/App.test.js:35:21)
+    at Promise.then.completed (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:216:10)
+    at _callCircusTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:212:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:63:9)
+    at run (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:472:34)</failure>
     </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.135">
+    <testcase classname=" convert textarea to Uppercase than lowercase " name=" convert textarea to Uppercase than lowercase " time="0.071">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  mhvbd jgdhg yg dg uig duguigd ugd
+Received:
+  MHVBD Jgdhg yG Dg uig dugUIGD Ugd
+    at Object.&lt;anonymous&gt; (/Users/abittoo/Desktop/Pesto/Project 1/abc/src/App.test.js:48:21)
+    at Promise.then.completed (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:216:10)
+    at _callCircusTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:212:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:63:9)
+    at run (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:472:34)</failure>
     </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.063">
+    <testcase classname=" convert single character to lowercase" name=" convert single character to lowercase" time="0.019">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  a
+Received:
+  A
+    at Object.&lt;anonymous&gt; (/Users/abittoo/Desktop/Pesto/Project 1/abc/src/App.test.js:59:21)
+    at Promise.then.completed (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:216:10)
+    at _callCircusTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:212:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:63:9)
+    at run (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:472:34)</failure>
     </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.077">
+    <testcase classname=" Check the total word count " name=" Check the total word count " time="0.027">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  1
+Received:
+
+    at Object.&lt;anonymous&gt; (/Users/abittoo/Desktop/Pesto/Project 1/abc/src/App.test.js:69:21)
+    at Promise.then.completed (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:216:10)
+    at _callCircusTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:212:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:63:9)
+    at run (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:472:34)</failure>
     </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.083">
-    </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.068">
-    </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.073">
-    </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.022">
+    <testcase classname=" Check the total character count " name=" Check the total character count " time="0.158">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  99
+Received:
+
+    at Object.&lt;anonymous&gt; (/Users/abittoo/Desktop/Pesto/Project 1/abc/src/App.test.js:78:21)
+    at Promise.then.completed (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/utils.js:216:10)
+    at _callCircusTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:212:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:63:9)
+    at run (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/abittoo/Desktop/Pesto/Project 1/abc/node_modules/jest-runner/build/runTest.js:472:34)</failure>
     </testcase>
   </testsuite>
 </testsuites>

@@ -6,25 +6,34 @@ export default function Textbox( ) {
     const [text, setText] = useState("");
 
     const uppercase= ()=>{
-        let textt=text.toUpperCase();
-        setText(textt);
+        //TODO : Define function , convert the text in uppercase
     }
 
     const lowercase= ()=>{
-        let textt=text.toLowerCase();
-        setText(textt);
+        //TODO : Define function , convert the text in lowercase
     }
 
-    const removeextraspace=() =>{
-        let textt=text.split(/[ ]+/);
-        setText(textt.join(" "));
+    const removeExtraSpace=() =>{
+        //TODO : Define function , remove the extra space from the text
+
     }
 
-    const clearall= ()=>{
-        setText("");
+    const clearAll= ()=>{
+        //TODO : Define function , it must clear the text to empty string
+
     }
-    
-    const handleonchange= (event)=>{
+
+    const calculateWordCount = ()=>{
+        //TODO : Define function , it must give the exact count of total word in test area
+        // return text.split(/\s+/).filter((element) => {return element.length!== 0}).length;
+    }
+
+    const calculateCharacters = ()=> {
+        //TODO : Define function , it must give the exact count of total characters in test area
+        // return text.length;
+    }
+
+    const handleOnChange = (event)=>{
         setText(event.target.value);
     }
 
@@ -32,14 +41,14 @@ export default function Textbox( ) {
     return (
         <>
         <div className="container my-2" >
-
+            
             <div className="mb-3">
-                <textarea className="form-control" data-testid="mybox" placeholder="Text to be converted...." rows="5" value={text} onChange={handleonchange} ></textarea>
+                <textarea className="form-control" placeholder="Text to be converted...." rows="5" value={text} onChange={handleOnChange} ></textarea>
             </div> 
             <button type="button" className="btn btn-primary mx-2 my-1" onClick={uppercase} >Convert To Uppercase</button>
             <button type="button" className="btn btn-primary mx-2 my-1" onClick={lowercase} >Convert To Lowercase</button>
-            <button type="button" className="btn btn-primary mx-2 my-1" onClick={removeextraspace} >Remove extra spaces</button>
-            <button type="button" className="btn btn-danger mx-2 my-1" onClick={clearall} >Clear</button>
+            <button type="button" className="btn btn-primary mx-2 my-1" onClick={removeExtraSpace} >Remove extra spaces</button>
+            <button type="button" className="btn btn-danger mx-2 my-1" onClick={clearAll} >Clear</button>
             
     
         </div>
@@ -48,12 +57,12 @@ export default function Textbox( ) {
             <h2>Summary of text</h2>
 
             <p data-testid="total">
-            Total Words:    <b>{text.split(/\s+/).filter((element) => {return element.length!== 0}).length}</b> <br/> 
-            Total Characters:   <b>{text.length}</b> <br/> 
+                Total Words:    <span data-testid="number-of-word">{calculateWordCount()}</span> <br/> 
+                Total Characters:   <span data-testid="number-of-character" >{calculateCharacters()}</span> <br/> 
             </p>
 
             <h2>Preview</h2>
-            <p data-testid="final">{text}</p>
+            <pre data-testid="preview">{text}</pre>
         </div>
 
         </> 

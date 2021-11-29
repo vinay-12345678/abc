@@ -1,123 +1,80 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import Textbox from './Components/Textbox';
+import TextBox from './Components/Textbox';
 import '@testing-library/jest-dom'
 
-test('renders learn react link', () => {
-  render(<Textbox />);
-  
-  userEvent.type(screen.getByRole("textbox"),"abc defghi j");
-  userEvent.click(screen.getByText('Convert To Uppercase'));
-  const paragraph=screen.getByTestId("final");
-  expect(paragraph).toHaveTextContent("ABC DEFGHI J");
-  // userEvent.click(screen.getByText('Remove extra spaces'));
-  // screen.debug();
-  // userEvent.type(textbox,"ajdsbf ausdhf  dafg");
-  // expect (textbox).toHaveAttribute("value","hsvdjvf")
-  // console.log( expect(paragraph).toHaveTextContent("abc"));
-  // console.log(textbox.getAttributeNode());
-  // expect(textbox).toHaveValue("ajdsbf ausdhf  dafg");
-
-});
-
-test('renders learn react link', () => {
-  render(<Textbox />);
-  
-  userEvent.type(screen.getByRole("textbox"),"abc    def  f  ");
-  userEvent.click(screen.getByText('Remove extra spaces'));
-  const paragraph=screen.getByTestId("final");
-  expect(paragraph).toHaveTextContent("abc def f");
-
-
-});
-
-test('renders learn react link', () => {
-  render(<Textbox />);
-  
-  userEvent.type(screen.getByRole("textbox"),"ab iaush               fb");
-  userEvent.click(screen.getByText('Remove extra spaces'));
-  const paragraph=screen.getByTestId("final");
-  expect(paragraph).toHaveTextContent("ab iaush fb");
-
-
-});
-
-test('renders learn react link', () => {
-  render(<Textbox />);
-  
-  userEvent.type(screen.getByRole("textbox"),"a                  iuSdf iushdgsi dj suidh          isudf");
-  userEvent.click(screen.getByText('Remove extra spaces'));
-  const paragraph=screen.getByTestId("final");
-  expect(paragraph).toHaveTextContent("a iuSdf iushdgsi dj suidh isudf");
-
-
-});
-
-test('renders learn react link', () => {
-  render(<Textbox />);
+test('clearing the text area', () => {
+  render(<TextBox />);
   
   userEvent.type(screen.getByRole("textbox"),"jHd siudugf  iuegf");
   userEvent.click(screen.getByText('Clear'));
-  const paragraph=screen.getByTestId("final");
+  const paragraph=screen.getByTestId("preview");
   expect(paragraph).toHaveTextContent("");
 
 
 });
 
-test('renders learn react link', () => {
-  render(<Textbox />);
+test('convert textarea to Uppercase ', () => {
+  render(<TextBox />);
   
   userEvent.type(screen.getByRole("textbox"),"KJWDHKJ iih HWDIHUIahdsh uiAD");
   userEvent.click(screen.getByText('Convert To Uppercase'));
-  const paragraph=screen.getByTestId("final");
+  const paragraph=screen.getByTestId("preview");
   expect(paragraph).toHaveTextContent("KJWDHKJ IIH HWDIHUIAHDSH UIAD");
 
 
 });
 
-test('renders learn react link', () => {
-  render(<Textbox />);
+test('convert textarea to lowercase than uppercase ', () => {
+  render(<TextBox />);
   
   userEvent.type(screen.getByRole("textbox"),"KJWDHKJ iih HWDIHUIahdsh uiAD");
   userEvent.click(screen.getByText('Convert To Lowercase'));
   userEvent.click(screen.getByText('Convert To Uppercase'));
-  const paragraph=screen.getByTestId("final");
+  const paragraph=screen.getByTestId("preview");
   expect(paragraph).toHaveTextContent("KJWDHKJ IIH HWDIHUIAHDSH UIAD");
 
 
 });
 
-test('renders learn react link', () => {
-  render(<Textbox />);
-  
-  userEvent.type(screen.getByRole("textbox"),"MHVBD Jgdhg yG Dg uig dugUIGD Ugd");
-  userEvent.click(screen.getByText('Convert To Lowercase'));
-  const paragraph=screen.getByTestId("final");
-  expect(paragraph).toHaveTextContent("mhvbd jgdhg yg dg uig duguigd ugd");
 
-
-});
-
-test('renders learn react link', () => {
-  render(<Textbox />);
+test('convert textarea to Uppercase than lowercase ', () => {
+  render(<TextBox />);
   
   userEvent.type(screen.getByRole("textbox"),"MHVBD Jgdhg yG Dg uig dugUIGD Ugd");
   userEvent.click(screen.getByText('Convert To Uppercase'));
   userEvent.click(screen.getByText('Convert To Lowercase'));
-  const paragraph=screen.getByTestId("final");
+  const paragraph=screen.getByTestId("preview");
   expect(paragraph).toHaveTextContent("mhvbd jgdhg yg dg uig duguigd ugd");
 
 
 });
 
-test('renders learn react link', () => {
-  render(<Textbox />);
+test('convert single character to lowercase', () => {
+  render(<TextBox />);
   
-  userEvent.type(screen.getByRole("textbox"),"");
+  userEvent.type(screen.getByRole("textbox"),"A");
   userEvent.click(screen.getByText('Convert To Lowercase'));
-  const paragraph=screen.getByTestId("final");
-  expect(paragraph).toHaveTextContent("");
-
+  const paragraph=screen.getByTestId("preview");
+  expect(paragraph).toHaveTextContent("a");
 
 });
 
+
+test('Check the total word count ', () => {
+  render(<TextBox />);
+  
+  userEvent.type(screen.getByRole("textbox"),"Hello");
+  const wordCount=screen.getByTestId("number-of-word");
+  expect(wordCount).toHaveTextContent(1);
+});
+
+
+test('Check the total character count ', () => {
+  render(<TextBox />);
+  
+  userEvent.type(screen.getByRole("textbox"),"wkdnbsh iuwdhsuif iuhfd uhdoif oifvcho feudohiouefhd.    djfoij rfdoij fi. rfi ijioj oi.     efodhj");
+  const wordCount=screen.getByTestId("number-of-character");
+  expect(wordCount).toHaveTextContent(99);
+  
+});
