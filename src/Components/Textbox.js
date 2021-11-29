@@ -25,12 +25,12 @@ export default function Textbox( ) {
 
     const calculateWordCount = ()=>{
         //TODO : Define function , it must give the exact count of total word in test area
-        // return text.split(/\s+/).filter((element) => {return element.length!== 0}).length;
+    
     }
 
     const calculateCharacters = ()=> {
         //TODO : Define function , it must give the exact count of total characters in test area
-        // return text.length;
+
     }
 
     const handleOnChange = (event)=>{
